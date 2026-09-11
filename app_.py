@@ -160,12 +160,18 @@ st.markdown("""
     }
 
     .aqi-chip {
-        display: inline-block;
-        padding: 3px 12px;
-        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 168px;
+        height: 30px;
+        padding: 0 14px;
+        border-radius: 8px;
         color: white;
         font-weight: 700;
-        font-size: .85rem;
+        font-size: .8rem;
+        white-space: nowrap;
+        text-align: center;
     }
 
     .aqi-legend {
@@ -204,11 +210,17 @@ st.markdown("""
     }
 
     .stButton > button {
-        background-color: #2f7fbf;
+        background-color: #6c757d;
         color: white;
-        border: none;
+        border: 1px solid #6c757d;
         border-radius: 9px;
         font-weight: 700;
+    }
+
+    .stButton > button:hover {
+        background-color: #5a6268;
+        border-color: #5a6268;
+        color: white;
     }
 
     div[data-baseweb="tab-list"] {
